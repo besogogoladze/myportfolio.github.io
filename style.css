@@ -41,6 +41,9 @@ p {
 	letter-spacing: .2rem;
 	text-align: center;
 }
+#mySkills {
+	color: crimson;
+}
 #services #mySkills:hover {
 	color: #fff;
 }
@@ -60,6 +63,7 @@ p {
 	margin-top: 30px;
 	transition: .3s ease;
 	transition-property: background-color, color;
+	cursor: pointer;
 }
 .cta:hover {
 	color: white !important;
@@ -450,7 +454,7 @@ p {
 	margin-bottom: 20px;
 }
 #about .col-right .cta {
-	color: black;
+	color: crimson;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
