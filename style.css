@@ -318,6 +318,7 @@ p {
 	font-size: 20px;
 	color: #fff;
 	align-self: flex-end;
+	display: none;
 }
 #services .service-button {
 	border: 2px solid crimson;

@@ -75,7 +75,9 @@ function move() {
         PY.style.width = width + "%";
       }
     }
+
 	buttonDisplay.style.display = "none"
+	document.querySelectorAll('.value').forEach( (i) => i.style.display = "block")
   }
 
 	function animateValue(obj, start = 0, end = null, duration = 1300) {
