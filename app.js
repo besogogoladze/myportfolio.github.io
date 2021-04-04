@@ -130,7 +130,6 @@ let logo = document.getElementById('logo')
 
 function logoReload() {
 	logo.addEventListener('click', () => {
-		window.scrollTo(logo)
 		window.location.reload()
 	})
 }
