@@ -146,7 +146,7 @@ document.onreadystatechange = function() {
         document.querySelector(
           "body").style.overflow = "hidden";
         document.querySelector(
-          "#loader").style.visibility = "visible";
+          ".ripple-loader").style.visibility = "visible";
     } else {
 	    document.querySelector(
           "body").style.visibility = "visible";
@@ -155,6 +155,6 @@ document.onreadystatechange = function() {
 		document.querySelector(
 			"body").style.backgroundColor = "unset";
         document.querySelector(
-          "#loader").style.display = "none";
+          ".ripple-loader").style.display = "none";
     }
 };
