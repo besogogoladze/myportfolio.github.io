@@ -148,13 +148,13 @@ document.onreadystatechange = function() {
         document.querySelector(
           "#loader").style.visibility = "visible";
     } else {
+	    document.querySelector(
+          "body").style.visibility = "visible";
 		document.querySelector(
 			"body").style.overflow = "visible";
 		document.querySelector(
 			"body").style.backgroundColor = "unset";
         document.querySelector(
           "#loader").style.display = "none";
-        document.querySelector(
-          "body").style.visibility = "visible";
     }
 };
