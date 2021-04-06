@@ -771,25 +771,36 @@ p {
 	height: 6px;
 	background-color: #e51681;
 }
-#loader {
-	border: 12px solid #f3f3f3;
-	border-radius: 50%;
-	border-top: 12px solid crimson;
-	width: 70px;
-	height: 70px;
-	animation: spin 1s linear infinite;
+.ripple-loader {
+  position: relative;
+  width: 64px;
+  height: 64px;
 }
-  
-@keyframes spin {
-	100% {
-		transform: rotate(360deg);
-	}
+
+.ripple-loader div {
+  position: absolute;
+  border: 4px solid #454ADE;
+  border-radius: 50%;
+  animation: ripple-loader 1s ease-out infinite;
 }
-.center {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+
+.ripple-loader div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes ripple-loader {
+  0% {
+    top: 32px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+  }
 }
