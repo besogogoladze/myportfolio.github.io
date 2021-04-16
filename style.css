@@ -431,6 +431,9 @@ p {
 /* End Projects section */
 
 /* About Section */
+#contactMe{
+	color: crimson;
+}
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
