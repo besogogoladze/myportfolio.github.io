@@ -745,7 +745,7 @@ p {
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
-		margin: 1.5%;
+		margin: 2.5%;
 	}
 }
 /* End  Media Query For Desktop */
@@ -770,6 +770,11 @@ p {
 	background-color: #e51681;
 }
 #PY {
+	width: 0%;
+	height: 6px;
+	background-color: #e51681;
+}
+#WP {
 	width: 0%;
 	height: 6px;
 	background-color: #e51681;

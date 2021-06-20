@@ -33,12 +33,14 @@ function move() {
     var CSS = document.getElementById("CSS");
     var JS = document.getElementById("JS");
     var PY = document.getElementById("PY");
+    var WP = document.getElementById("WP");
 	var buttonDisplay = document.querySelector(".service-button")
     var width = 1;
     let id1 = setInterval(frame1, 70);
     let id2 = setInterval(frame2, 70);
     let id3 = setInterval(frame3, 30);
     let id4 = setInterval(frame4, 70);
+    let id5 = setInterval(frame5, 70);
     function frame1() {
       if (width >= 80) {
         clearInterval(id1);
@@ -73,6 +75,15 @@ function move() {
       } else {
         width++;
         PY.style.width = width + "%";
+      }
+    }
+    function frame5() {
+      if (width >= 60) {
+        clearInterval(id4);
+        i = 0;
+      } else {
+        width++;
+        WP.style.width = width + "%";
       }
     }
 
@@ -124,6 +135,7 @@ function move() {
 	animateValue(document.querySelector(".CSSValue"));
 	animateValue(document.querySelector(".JSValue"));
 	animateValue(document.querySelector(".PYValue"));
+	animateValue(document.querySelector(".WPValue"));
 }
 
 
