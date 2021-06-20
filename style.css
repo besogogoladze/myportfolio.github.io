@@ -387,7 +387,6 @@ p {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
-	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -410,7 +409,6 @@ p {
 #projects .project-img {
 	flex-basis: 50%;
 	height: 300px;
-	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -601,9 +599,6 @@ p {
 @media only screen and (max-width:768px) {
 	#footer p {
 		font-size: 1rem;
-	}
-	iframe{
-		width: 100% !important;
 	}
 }
 /* Media Query For Tablet */
