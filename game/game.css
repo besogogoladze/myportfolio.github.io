@@ -13,6 +13,7 @@ body {
 .pointer {
     pointer-events: none;
 }
+
 @-webkit-keyframes pulseBorder {
     0% {
         border: dashed 3px red;
@@ -38,7 +39,7 @@ body {
         border: dashed 3px blue;
         color: blue;
     }
-  }
+}
   
   .button {
     -webkit-animation-name: pulseBorder;
@@ -68,6 +69,17 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+  .points {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .points a {
+      font-size: 30px;
+      text-decoration: none;
+      color: rebeccapurple;
   }
   .points h1{
       display: flex;
