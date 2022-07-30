@@ -45,10 +45,21 @@ body {
 .game_button {
     width: 100px;
     height: 60px;
-    background-color: #0001;
-    color: rebeccapurple;
+    background-color: green;
+    color: #fff;
     font-size: 20px;
     border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.game_button_restart {
+    width: 100px;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 2rem;
     cursor: pointer;
 }
 .button {
