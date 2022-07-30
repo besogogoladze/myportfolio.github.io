@@ -16,7 +16,7 @@ body {
   pointer-events: none;
 }
 
-@-webkit-keyframes pulseBorder {
+@keyframes pulseBorder {
   0% {
     border: dashed 3px red;
     color: red;
