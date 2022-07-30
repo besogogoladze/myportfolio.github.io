@@ -52,11 +52,11 @@ body {
     cursor: pointer;
 }
 .button {
-  -webkit-animation-name: pulseBorder;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-duration: 1s;
+  animation-name: pulseBorder;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-duration: 1s;
   text-align: center;
   font-size: 20px;
   padding: 100px;
