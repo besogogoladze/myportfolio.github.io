@@ -243,6 +243,7 @@ p {
 }
 #hero h1 {
 	display: block;
+	width: -moz-fit-content;
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
@@ -732,6 +733,7 @@ p {
 		position: initial;
 		display: block;
 		height: auto;
+		width: -moz-fit-content;
 		width: fit-content;
 		background-color: transparent;
 	}
