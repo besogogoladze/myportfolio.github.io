@@ -699,6 +699,7 @@ p {
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
+    row-gap: 20px;
     margin: 0;
   }
   #contact .contact-item {
