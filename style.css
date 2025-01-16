@@ -605,6 +605,9 @@ p {
   #footer p {
     font-size: 1rem;
   }
+  .contact-info {
+    width: 100%;
+  }
   .contact-items {
     width: 100%;
     display: flex;
