@@ -605,6 +605,13 @@ p {
   #footer p {
     font-size: 1rem;
   }
+  .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 /* Media Query For Tablet */
 /* Media Query For Tablet */
