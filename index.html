@@ -1,289 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/2021-04-04.png" />
+    <title>My Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel='shortcut icon' type='image/x-icon' href="./img/2021-04-04.png" />
-  <title>My Portfolio</title>
-</head>
-
-<body>
-  <div class="ripple-loader center">
-    <div></div>
-    <div></div>
-  </div>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="./index.html" id="logo" onclick="logoReload()">
-            <h1><span>G</span>OGOL <span>A</span>DZE</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+  <body>
+    <div class="ripple-loader center">
+      <div></div>
+      <div></div>
     </div>
-  </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>GOGOLADZE BESIKI<span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
-
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img alt="imgError" src="./img/html.png" /></div>
-          <h2 class="section-title">HTML:<span>5</span></h2>
-          <div class="value HTMLValue">80%</div>
-          <div class="myProgress">
-            <div id="HTML"></div>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="./index.html" id="logo" onclick="logoReload()">
+              <h1><span>G</span>OGOL <span>A</span>DZE</h1>
+            </a>
           </div>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img alt="imgError"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" /></div>
-          <h2 class="section-title">C<span>S</span>S</h2>
-          <div class="value CSSValue">70%</div>
-          <div class="myProgress">
-            <div id="CSS"></div>
-          </div>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img alt="imgError" src="./img/js.svg" /></div>
-          <h2 class="section-title"><span>J</span>ava<span>S</span>cript</h2>
-          <div class="value valueDisplayBlock JSValue">90%</div>
-          <div class="myProgress">
-            <div id="JS"></div>
-          </div>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img alt="imgError" src="./img/nodejs.png" /></div>
-          <h2 class="section-title"><span>N</span>ode</h2>
-          <div class="value PYValue">60%</div>
-          <div class="myProgress">
-            <div id="PY"></div>
-          </div>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img alt="imgError" id="wordpress-logo" src="./img/wordpress-logo.png" /></div>
-          <h2 class="section-title"><span>W</span>ordpress</h2>
-          <div class="value WPValue">60%</div>
-          <div class="myProgress">
-            <div id="WP"></div>
-          </div>
-        </div>
-      </div>
-      <button class="service-button" onClick="move()">
-        <h5 class="section-title" id="mySkills">Show My Skills</h5>
-      </button>
-    </div>
-  </section>
-  <!-- End Service Section -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Latoscana</h2>
-            <p>This project is made with Wordpress</p>
-          </div>
-          <a rel="noopener" class="project-img" href="http://www.latoscana.shop/" target="_blank">
-            <img src="./img/latoscana-shop.png" alt="img">
-          </a>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Restaurant-Thali</h2>
-            <p>This project is made with Wordpress</p>
-          </div>
-          <a rel="noopener" class="project-img" href="https://restaurant-thali.com/" target="_blank">
-            <img src="./img/restaurant-Thali.png" alt="img">
-          </a>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Game</h2>
-            <p>This game is made with Html, JavaScript, CSS</p>
-          </div>
-          <a class="project-img" href="./game/games/index.html">
-            <img src="./img/game.png" alt="img">
-          </a>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Vins_Georgien</h2>
-            <p>Georgian Wine</p>
-          </div>
-          <a rel="noopener" class="project-img" href="https://besogogoladze.github.io/georgien_vins/" target="_blank">
-            <div class="project-img">
-              <img src="./img/Vins_Georgien.png" alt="img">
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
             </div>
-          </a>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Service">Services</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+              <li>
+                <select id="language-selector" aria-label="Choose Language">
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="ge">ქართული</option>
+                </select>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+    </section>
+    <!-- End Header -->
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/IMG_4094.png" alt="img">
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1 id="Hello">Hello, <span></span></h1>
+          <h1 id="My-name">My Name is <span></span></h1>
+          <h1>GOGOLADZE BESIKI<span></span></h1>
+          <a id="portfolio" href="#projects" type="button" class="cta"
+            >Portfolio</a
+          >
         </div>
       </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Hello, my name is Gogoladze Besiki. I am a web developer. I have a degree in javaScript. I studied HTML, CSS,
-          JAVASCRIPT, REACTJS, NODEJS, PHYTON. I speak in 4 languages: French, English, Georgian and Russian. If you are
-          interested in my profile
-          <a href="#contact" id="contactMe" data-after="Contact">Contact me</a>.
-        </p>
-        <button class="cta" type="submit" onclick="window.open('./download/Developpeur_CV.pdf')">
-          Download Resume
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+    </section>
+    <!-- End Hero Section  -->
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img alt="imgError" src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2><a href="tel:(+33)06 01 19 67 80">(+33)06 01 19 67 80</a></h2>
-          </div>
+    <!-- Service Section -->
+    <section id="services">
+      <div class="services">
+        <div class="service-top">
+          <h1 class="section-title">Serv<span>i</span>ces</h1>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img alt="imgError" src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>
-              <a href="mailto:gogoladzebeso8@gmail.com" class="">
-                gogoladzebeso8@gmail.com
+        <div class="banner">
+          <div class="banner-item">
+            <div class="skill">
+              <a
+                rel="noopener"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                />
+                <p>HTML</p>
               </a>
-            </h2>
+            </div>
+
+            <div class="skill">
+              <a
+                rel="noopener"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                />
+                <p>CSS</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a
+                rel="noopener"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <p>JavaScript</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://www.php.net/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+                <p>PHP</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://nodejs.org/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+                <p>Node.js</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://www.python.org/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                <p>Python</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://www.java.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java"
+                />
+                <p>Java</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://www.mysql.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+                <p>MySQL</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a
+                rel="noopener"
+                href="https://www.postgresql.org/"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                />
+                <p>PostgreSQL</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://www.mongodb.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                />
+                <p>MongoDB</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://react.dev/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React.js"
+                />
+                <p>React.js</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://nextjs.org/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js"
+                />
+                <p>Next.js</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://git-scm.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <p>Git</p>
+              </a>
+            </div>
+
+            <div class="skill">
+              <a rel="noopener" href="https://github.com/" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                />
+                <p>GitHub</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="contact-item" id="Map">
-          <div class="icon"><img alt="imgError" src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46180.888742346455!2d0.5253532641279822!3d43.66261484430494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a982b9687c606f%3A0x23818fc53ae6d13e!2s32000%20Auch!5e0!3m2!1ska!2sfr!4v1678438880692!5m2!1ska!2sfr"
-              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 id="recent" class="section-title">
+            Recent
+          </h1>
+          <h1 id="recentProjects">Projects</h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Vins Georgiens</h1>
+              <h2 id="project1">Project 1</h>
+              <p>Vins Georgiens. Georgian wine transporters in France ( Wordpress )</p>
+            </div>
+            <a
+              rel="noopener"
+              class="project-img"
+              href="http://www.vinsgeorgiens.com"
+              target="_blank"
+            >
+              <img src="./img/vinsGeorgiens.png" alt="img" />
+            </a>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Restaurant-Thali</h1>
+              <h2 id="project2">Project 2</h2>
+              <p>Restaurant-Thali. E-commerce restaurant website ( Wordpress )</p>
+            </div>
+            <a
+              rel="noopener"
+              class="project-img"
+              href="https://restaurant-thali.com/"
+              target="_blank"
+            >
+              <img src="./img/restaurant-Thali.png" alt="img" />
+            </a>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Game</h1>
+              <h2 id="project3">Project 3</h2>
+              <p>Little Game for entertainment ( Html, JavaScript, CSS )</p>
+            </div>
+            <a class="project-img" href="./game/games/index.html">
+              <img src="./img/game.png" alt="img" />
+            </a>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Vins_Georgien</h1>
+              <h2 id="project4">Project 4</h2>
+              <p>First version of Vins Georgiens ( HTML, CSS, React.js, Express.js  )</p>
+            </div>
+            <a
+              rel="noopener"
+              class="project-img"
+              href="https://besogogoladze.github.io/georgien_vins/"
+              target="_blank"
+            >
+              <div class="project-img">
+                <img src="./img/Vins_Georgien.png" alt="img" />
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Trip</h1>
+              <h2 id="projecst5">Project 5</h2>
+              <p>
+                This is a project that I made with Html, JavaScript, CSS, React
+              </p>
+            </div>
+            <a
+              rel="noopener"
+              class="project-img"
+              href="https://besogogoladze.github.io/trip/"
+              target="_blank"
+            >
+              <div class="project-img">
+                <img src="./img/trip.png" alt="img" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+    </section>
+    <!-- End Projects Section -->
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>G</span>OGOL <span>A</span>DZE</h1>
-      </div>
-      <div class="social-icon">
-        <div class="social-item">
-          <a rel="noopener" target="_blank" href="https://www.facebook.com/Bes096"><img alt="imgError"
-              src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/IMG_CV.png" alt="img" />
+          </div>
         </div>
-        <div class="social-item">
-          <a rel="noopener" target="_blank" href="https://www.instagram.com/besogogoladze/"><img alt="imgError"
-              src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        <div class="col-right">
+          <h1 id="section-title" class="section-title">About me</h1>
+          <h2>Front End Developer</h2>
+          <div>
+            <p id="about-me">
+              Hello, my name is Gogoladze Besiki. I am a web developer. I have a
+              degree in javaScript. I studied HTML, CSS, JAVASCRIPT, REACTJS,
+              NODEJS, PHYTON. I speak in 4 languages: French, English, Georgian
+              and Russian. If you are interested in my profile
+            </p>
+            <p>
+              <a href="#contact" id="contactMe" data-after="Contact"
+                >Contact me</a
+              >.
+            </p>
+          </div>
+          <button
+            id="download-resume"
+            class="cta"
+            type="submit"
+            onclick="downloadCv()"
+          >
+            Download Resume
+          </button>
         </div>
       </div>
-      <p>Copyright © 2021 GOGOLADZE. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v10.0'
-      });
-    };
+    </section>
+    <!-- End About Section -->
 
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div class="contact-info-title">
+          <h1 id="contact-info-title" class="section-title">Contact</h1>
+          <h1 id="contact-info" class="section-title">info</h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                alt="imgError"
+                src="https://img.icons8.com/bubbles/100/000000/phone.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2><a href="tel:(+33)06 01 19 67 80">(+33)06 01 19 67 80</a></h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                alt="imgError"
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>
+                <a href="mailto:gogoladzebeso8@gmail.com" class="">
+                  gogoladzebeso8@gmail.com
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class="contact-item" id="Map">
+            <div class="icon">
+              <img
+                alt="imgError"
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46180.888742346455!2d0.5253532641279822!3d43.66261484430494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a982b9687c606f%3A0x23818fc53ae6d13e!2s32000%20Auch!5e0!3m2!1ska!2sfr!4v1678438880692!5m2!1ska!2sfr"
+                width="100%"
+                height="400"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
 
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution="setup_tool" page_id="107306501465360">
-  </div>
-  <script src="./app.js"></script>
-</body>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>G</span>OGOL <span>A</span>DZE</h1>
+        </div>
+        <div class="social-icon">
+          <div class="social-item">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.facebook.com/Bes096"
+              ><img
+                alt="imgError"
+                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.instagram.com/besogogoladze/"
+              ><img
+                alt="imgError"
+                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.linkedin.com/in/besiki-gogoladze-0703aa1b5/"
+              ><img
+                alt="imgError"
+                src="https://img.icons8.com/?size=100&id=108812&format=png&color=000000"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/besogogoladze"
+              ><img
+                alt="imgError"
+                src="https://img.icons8.com/?size=100&id=118553&format=png&color=000000"
+            /></a>
+          </div>
+        </div>
+        <p>Copyright © 2025 GOGOLADZE. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v10.0",
+        });
+      };
 
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="107306501465360"
+    ></div>
+    <script src="./app.js"></script>
+    <script src="./language.js"></script>
+  </body>
 </html>
