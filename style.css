@@ -47,7 +47,7 @@ p {
 #mySkills {
   color: crimson;
 }
-#services #mySkills:hover {
+#services:hover {
   color: #fff;
 }
 #recentProjects {
@@ -166,8 +166,6 @@ p {
   height: 60px;
   width: 60px;
   display: inline-block;
-  border: 3px solid white;
-  border-radius: 30%;
   position: relative;
   display: flex;
   align-items: center;
@@ -175,16 +173,13 @@ p {
   z-index: 100;
   cursor: pointer;
   transform: scale(0.8);
-  margin-right: 20px;
 }
 #header .hamburger:after {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 30%;
-  border: 3px solid white;
-  /* animation: hamburger_puls 1s ease infinite; */
+  animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -373,9 +368,6 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
-}
-#projects .projects-header h1 {
-  margin-bottom: 50px;
 }
 .projects-header {
   display: flex;
@@ -768,7 +760,8 @@ p {
   }
   #header .nav-list ul {
     position: initial;
-    display: block;
+    display: flex;
+    flex-direction: unset;
     height: auto;
     width: -moz-fit-content;
     width: fit-content;
@@ -864,18 +857,36 @@ p {
 }
 
 #language-selector {
+  cursor: pointer;
   padding: 10px;
   background-color: transparent;
   border: 1px solid transparent;
   color: #fff;
+  border-radius: 10px;
+}
+.language-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+select {
+  font-variation-settings: "wght" 400;
+  font-variant-emoji: emoji;
+}
+#language-selector:hover {
+  background-color: #252c48;
 }
 #language-selector:focus {
   outline: none;
+}
+#flag-icon {
+  width: 50px;
 }
 
 #language-selector option {
   background-color: #252c48;
   color: #fff;
+  cursor: pointer;
 }
 
 .banner {

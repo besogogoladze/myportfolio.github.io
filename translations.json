@@ -3,7 +3,7 @@
     "Hello": "Hello",
     "MyName": "My name is",
     "portfolio": "Portfolio",
-    "mySkills": "Show My Skills",
+    "mySkills": "My Skills",
     "recent": "Recent",
     "recentProjects": "Projects",
     "project1": "Project 1",
@@ -15,8 +15,7 @@
     "contactMe": "Contact Me",
     "aboutMe": "Hello, my name is Gogoladze Besiki. I am a web developer. I have a degree in javaScript. I studied HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. I speak in 4 languages: French, English, Georgian and Russian. If you are interested in my profile",
     "downloadResume": "Download Resume",
-    "contactInfoTitle": "Contact",
-    "contactInfo": "info"
+    "contactInfoTitle": "Contact info"
   },
   "fr": {
     "Hello": "Bonjour",
@@ -34,8 +33,7 @@
     "contactMe": "Contactez-moi",
     "aboutMe": "Bonjour, je m'appelle Gogoladze Besiki. Je suis un développeur web. J'ai un diplôme en javaScript. J'ai étudié HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. Je parle 4 langues: français, anglais, géorgien et russe. Si vous êtes intéressé par mon profil",
     "downloadResume": "Télécharger le CV",
-    "contactInfoTitle": "Contact",
-    "contactInfo": "info"
+    "contactInfoTitle": "Informations de contact"
   },
   "ge": {
     "Hello": "გამარჯობა",
@@ -53,7 +51,6 @@
     "contactMe": "დამიკავშირდით",
     "aboutMe": "გამარჯობა, მე მქვია გოგოლაძე ბესიკი. მე ვარ ვებ დეველოპერი. მაქვს ჯავასკრიპტის ხარისხი. შევისწავლე HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. ვსაუბრობ 4 ენაზე: ფრანგულ, ინგლისურ, ქართულ და რუსულ ენაზე. თუ გაინტერესებთ ჩემი პროფილი",
     "downloadResume": "გადმოწერეთ რეზიუმე",
-    "contactInfoTitle": "საკონტაქტო",
-    "contactInfo": "ინფორმაცია"
+    "contactInfoTitle": "საკონტაქტო ინფორმაცია"
   }
 }
