@@ -32,7 +32,6 @@ const makeIteration = () => {
     start.style.display = 'none'
     seconds -= 1;
   if (seconds > 0) {
-    console.log(seconds);
     setTimeout(makeIteration, 1000);
   }
   else if(seconds == 0) {
