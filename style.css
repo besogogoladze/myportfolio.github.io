@@ -476,7 +476,7 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
+  border: 10px solid #ecebeb;
 }
 #about .col-left .about-img::after {
   content: "";
