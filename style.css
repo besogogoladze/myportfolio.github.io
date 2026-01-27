@@ -44,12 +44,13 @@ p {
   letter-spacing: 0.2rem;
   text-align: center;
 }
+#recent {
+  color: #fff;
+}
 #mySkills {
   color: crimson;
 }
-#services:hover {
-  color: #fff;
-}
+
 #recentProjects {
   font-size: 4rem;
   font-weight: 300;
@@ -286,6 +287,9 @@ p {
 /* End Hero Section */
 
 /* Services Section */
+#services {
+  margin: 20px 0;
+}
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -362,81 +366,159 @@ p {
 }
 /* End Services Section */
 
-/* Projects section */
+/* Projects section upgraded for modern responsive card layout */
+
+/* Load More */
+.project-card {
+  display: none;
+}
+
+.project-card.show {
+  display: block;
+  animation: fadeUp 0.4s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.load-more-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.load-more {
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Load More */
+
+.project-section {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
+
 .projects-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-#projects .all-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#projects .project-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-#projects .project-info {
+
+.projects-container {
   width: 100%;
-  height: 100%;
-  padding: 30px;
-  flex-basis: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
-#projects .project-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
+
+/* Project card */
+.project-card {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-#projects .project-info h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-#projects .project-info p {
-  color: white;
-}
-#projects .project-img {
-  flex-basis: 50%;
+
+/* Project image */
+.project-card .project-img {
+  width: 100%;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
-#projects .project-img:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+
+.project-card .project-img img {
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.2;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
 }
-#projects .project-img img {
-  transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
+
+.project-card:hover .project-img img {
   transform: scale(1.1);
 }
+
+/* Project info */
+.project-card .project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover .project-info {
+  transform: translateY(0);
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card .project-info h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card .project-info p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Button */
+.project-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: rgb(220, 20, 60);
+}
+
 /* End Projects section */
 
 /* About Section */
@@ -746,6 +828,21 @@ p {
   /* End contact  */
 }
 /* End Media Query For Tablet */
+@media only screen and (max-width: 768px) {
+  .project-card .project-img {
+    height: 180px;
+  }
+  .project-card .project-info h3 {
+    font-size: 1.8rem;
+  }
+  .project-card .project-info p {
+    font-size: 1.3rem;
+  }
+  .project-card .btn {
+    font-size: 1.3rem;
+    padding: 8px 18px;
+  }
+}
 
 @media only screen and (max-width: 850px) {
   .banner-item {
@@ -892,10 +989,10 @@ select {
 .banner {
   display: flex;
   justify-content: center;
-  background: white;
   padding: 20px;
+  background: white;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px #333;
 }
 .banner-item {
   width: 60%;
@@ -912,7 +1009,9 @@ select {
   background: white;
   border: 2px solid #ddd;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 .skill:hover {
   transform: scale(1.1);

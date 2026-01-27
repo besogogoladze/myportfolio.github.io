@@ -7,19 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const elementsToTranslate = {
+    home: document.getElementById("home"),
+    services: document.getElementById("services"),
+    projects: document.getElementById("projects"),
+    about: document.getElementById("about"),
+    contact: document.getElementById("contact"),
     Hello: document.getElementById("Hello"),
     MyName: document.getElementById("My-name"),
     portfolio: document.getElementById("portfolio"),
     mySkills: document.getElementById("mySkills"),
     recent: document.getElementById("recent"),
     recentProjects: document.getElementById("recentProjects"),
-    project1: document.getElementById("project1"),
-    project2: document.getElementById("project2"),
-    project3: document.getElementById("project3"),
-    project4: document.getElementById("project4"),
-    project5: document.getElementById("project5"),
-    project6: document.getElementById("project6"),
-    project7: document.getElementById("project7"),
     project_1: document.getElementById("project_1"),
     project_2: document.getElementById("project_2"),
     project_3: document.getElementById("project_3"),
@@ -76,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 const downloadCv = () => {
   const savedLang = localStorage.getItem("lang") || "en";
   const cvFiles = {
-    en: "./download/CV_Gogoladze_Besiki_EN.pdf",
-    fr: "./download/CV_GOGOLADZEBesiki_FR.pdf",
-    ge: "./download/Developpeur_CV.pdf",
+    en: "./download/cv_gogoladze_besiki.pdf",
+    fr: "./download/cv_gogoladze_besiki.pdf",
+    ge: "./download/cv_gogoladze_besiki.pdf",
   };
 
   const cvUrl = cvFiles[savedLang] || cvFiles.en;

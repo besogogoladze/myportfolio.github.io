@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <meta name="my portfolio" content="This is my portfolio">
+    <meta name="my portfolio" content="This is my portfolio" />
     <link rel="shortcut icon" type="image/x-icon" href="./img/2021-04-04.png" />
     <title>My Portfolio</title>
   </head>
@@ -28,18 +28,52 @@
               <div class="bar"></div>
             </div>
             <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#services" data-after="Service">Services</a></li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
+              <li><a href="#hero" id="home" data-after="Home">Home</a></li>
+              <li>
+                <a href="#services" id="services" data-after="Service"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#projects" id="projects" data-after="Projects"
+                  >Projects</a
+                >
+              </li>
+              <li><a href="#about" id="about" data-after="About">About</a></li>
+              <li>
+                <a href="#contact" id="contact" data-after="Contact">Contact</a>
+              </li>
               <li>
                 <div class="language-selector">
-                  <img id="flag-icon" class="flag" src="https://img.icons8.com/?size=100&id=122839&format=png&color=000000" alt="English Flag">
-                  <select id="language-selector" aria-label="Choose Language" onchange="changeFlag()">
-                    <option value="en" data-flag="https://img.icons8.com/?size=100&id=122839&format=png&color=000000">English</option>
-                    <option value="fr" data-flag="https://img.icons8.com/?size=100&id=Lz5yTQTQAEvw&format=png&color=000000">Français</option>
-                    <option value="ge" data-flag="https://img.icons8.com/?size=100&id=poCxqGc6wXA5&format=png&color=000000">ქართული</option>
+                  <img
+                    id="flag-icon"
+                    class="flag"
+                    src="https://img.icons8.com/?size=100&id=122839&format=png&color=000000"
+                    alt="English Flag"
+                  />
+                  <select
+                    id="language-selector"
+                    aria-label="Choose Language"
+                    onchange="changeFlag()"
+                  >
+                    <option
+                      value="en"
+                      data-flag="https://img.icons8.com/?size=100&id=122839&format=png&color=000000"
+                    >
+                      English
+                    </option>
+                    <option
+                      value="fr"
+                      data-flag="https://img.icons8.com/?size=100&id=Lz5yTQTQAEvw&format=png&color=000000"
+                    >
+                      Français
+                    </option>
+                    <option
+                      value="ge"
+                      data-flag="https://img.icons8.com/?size=100&id=poCxqGc6wXA5&format=png&color=000000"
+                    >
+                      ქართული
+                    </option>
                   </select>
                 </div>
               </li>
@@ -235,132 +269,191 @@
     <!-- End Service Section -->
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="project-section">
       <div class="projects container">
         <div class="projects-header">
-          <h1 id="recent" class="section-title">
-            Recent
-          </h1>
+          <h1 id="recent" class="section-title">Recent</h1>
           <h1 id="recentProjects">Projects</h1>
         </div>
-        <div class="all-projects">
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Vins Georgiens</h1>
-              <h2 id="project1">Project 1</h>
-              <p id="project_1">Vins Georgiens. Georgian wine transporters in France ( Wordpress )</p>
-            </div>
+
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card">
             <a
               rel="noopener"
-              class="project-img"
               href="http://www.vinsgeorgiens.com"
               target="_blank"
+              class="project-img"
             >
-              <img src="./img/vinsGeorgiens.png" alt="img" />
+              <img src="./img/vinsGeorgiens.png" alt="Vins Georgiens" />
             </a>
-          </div>
-          <div class="project-item">
             <div class="project-info">
-              <h1>Restaurant-Thali</h1>
-              <h2 id="project2">Project 2</h2>
-              <p id="project_2">Restaurant-Thali. E-commerce restaurant website ( Wordpress )</p>
+              <h3>Vins Georgiens</h3>
+              <p id="project_1">
+                Georgian wine transporters in France. Built with Wordpress.
+              </p>
+              <a
+                rel="noopener"
+                href="http://www.vinsgeorgiens.com"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
             <a
               rel="noopener"
-              class="project-img"
               href="https://restaurant-thali.com/"
               target="_blank"
+              class="project-img"
             >
-              <img src="./img/restaurant-Thali.png" alt="img" />
+              <img src="./img/restaurant-Thali.png" alt="Restaurant-Thali" />
             </a>
-          </div>
-          <div class="project-item">
             <div class="project-info">
-              <h1>Game</h1>
-              <h2 id="project3">Project 3</h2>
-              <p id="project_3">Little Game for entertainment ( Html, JavaScript, CSS )</p>
+              <h3>Restaurant-Thali</h3>
+              <p id="project_2">
+                E-commerce restaurant website built with Wordpress.
+              </p>
+              <a
+                rel="noopener"
+                href="https://restaurant-thali.com/"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
-            <a class="project-img" href="./game/games/index.html">
-              <img src="./img/game.png" alt="img" />
-            </a>
           </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Vins_Georgien</h1>
-              <h2 id="project4">Project 4</h2>
-              <p id="project_4">First version of Vins Georgiens ( HTML, CSS, React.js, Express.js  )</p>
-            </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
             <a
               rel="noopener"
+              href="./game/games/index.html"
               class="project-img"
+            >
+              <img src="./img/game.png" alt="Game" />
+            </a>
+            <div class="project-info">
+              <h3>Game</h3>
+              <p id="project_3">
+                Little game for entertainment using HTML, CSS, and JavaScript.
+              </p>
+              <a href="./game/games/index.html" class="btn">Play Game</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <a
+              rel="noopener"
               href="https://besogogoladze.github.io/georgien_vins/"
               target="_blank"
+              class="project-img"
             >
-              <div class="project-img">
-                <img src="./img/Vins_Georgien.png" alt="img" />
-              </div>
+              <img src="./img/Vins_Georgien.png" alt="Vins Georgien" />
             </a>
-          </div>
-          <div class="project-item">
             <div class="project-info">
-              <h1>Trip</h1>
-              <h2 id="project5">Project 5</h2>
-              <p id="project_5">
-                This application is made for IPI. This is a trip project which we had to make during the trip. ( React.js )
+              <h3>Vins_Georgien</h3>
+              <p id="project_4">
+                First version of Vins Georgiens (HTML, CSS, React.js,
+                Express.js).
               </p>
+              <a
+                rel="noopener"
+                href="https://besogogoladze.github.io/georgien_vins/"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
             <a
               rel="noopener"
-              class="project-img"
               href="https://besogogoladze.github.io/trip/"
               target="_blank"
+              class="project-img"
             >
-              <div class="project-img">
-                <img src="./img/trip.png" alt="img" />
-              </div>
+              <img src="./img/trip.png" alt="Trip Project" />
             </a>
-          </div>
-          <div class="project-item">
             <div class="project-info">
-              <h1>Timer</h1>
-              <h2 id="project6">Project 6</h2>
-              <p id="project_6">
-                This application is made for mobiles. Application helps you to train yourself and be in the best physical condition. ( React.js )
+              <h3>Trip</h3>
+              <p id="project_5">
+                Trip project built during IPI course using React.js.
               </p>
+              <a
+                rel="noopener"
+                href="https://besogogoladze.github.io/trip/"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
             <a
               rel="noopener"
-              class="project-img"
               href="https://besogogoladze.github.io/timer/"
               target="_blank"
+              class="project-img"
             >
-              <div class="project-img">
-                <img src="./img/timer.png" alt="img" />
-              </div>
+              <img src="./img/timer.png" alt="Timer App" />
             </a>
-          </div>
-          <div class="project-item">
             <div class="project-info">
-              <h1>FedScore</h1>
-              <h2 id="project7">Project 7</h2>
-              <p id="project_7">
-                This application is for rugby lovers. Inspiration for this application was given by friends, who are the members of these teams. It gives you opportunity to see the results of the matches, the schedule of the matches and the teams that are in the league. ( React.js )
+              <h3>Timer</h3>
+              <p id="project_6">
+                Mobile training application to help improve physical condition
+                (React.js).
               </p>
+              <a
+                rel="noopener"
+                href="https://besogogoladze.github.io/timer/"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card">
             <a
               rel="noopener"
-              class="project-img"
               href="https://besogogoladze.github.io/fedScore/"
               target="_blank"
+              class="project-img"
             >
-              <div class="project-img">
-                <img src="./img/fedScore.png" alt="img" />
-              </div>
+              <img src="./img/fedScore.png" alt="FedScore" />
             </a>
+            <div class="project-info">
+              <h3>FedScore</h3>
+              <p id="project_7">
+                Rugby app showing match results, schedules, and teams in the
+                league (React.js).
+              </p>
+              <a
+                rel="noopener"
+                href="https://besogogoladze.github.io/fedScore/"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
+            </div>
           </div>
+        </div>
+        <div class="load-more-wrapper">
+          <button id="loadMoreBtn" class="btn load-more">Load More</button>
         </div>
       </div>
     </section>
+
     <!-- End Projects Section -->
 
     <!-- About Section -->
@@ -449,7 +542,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46180.888742346455!2d0.5253532641279822!3d43.66261484430494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a982b9687c606f%3A0x23818fc53ae6d13e!2s32000%20Auch!5e0!3m2!1ska!2sfr!4v1678438880692!5m2!1ska!2sfr"
                 width="100%"
                 height="400"
-                style="border: 0;"
+                style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -542,5 +635,6 @@
     ></div>
     <script src="./app.js"></script>
     <script src="./language.js" defer></script>
+    <script src="./loadProjects.js"></script>
   </body>
 </html>
