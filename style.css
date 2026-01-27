@@ -544,12 +544,17 @@ p {
 #contactMe {
   color: crimson;
 }
+#about {
+  padding: 50px 0 0 0;
+}
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 20px;
+  align-items: start;
+  min-height: unset !important;
 }
 #about .col-left {
   width: 250px;
@@ -633,6 +638,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 /*End contact Section */
 
@@ -674,10 +680,14 @@ p {
   color: white;
   font-size: 1.3rem;
 }
+.bg {
+  color: crimson;
+  font-weight: 700;
+}
 /* End Footer */
 
 /* Keyframes */
-/* @keyframes hamburger_puls {
+@keyframes hamburger_puls {
 	0% {
 		opacity: 1;
 		transform: scale(1);
@@ -686,7 +696,7 @@ p {
 		opacity: 0;
 		transform: scale(1.4);
 	}
-} */
+}
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -792,7 +802,7 @@ p {
   }
   #about .col-right {
     text-align: left;
-    padding: 30px;
+    padding: 0 30px;
   }
   #about .col-right h1 {
     text-align: left;
