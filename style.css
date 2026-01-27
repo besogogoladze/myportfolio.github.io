@@ -389,15 +389,33 @@ p {
   }
 }
 
-.load-more-wrapper {
-  text-align: center;
-  margin-top: 40px;
+.load-more-btn {
+  margin-top: 50px;
+  background: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+  border-radius: 40px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
 }
 
-.load-more {
-  padding: 12px 28px;
-  font-size: 16px;
-  cursor: pointer;
+.load-more-btn span {
+  transition: transform 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background: crimson;
+  color: #fff;
+}
+
+.load-more-btn:hover span {
+  transform: translateX(6px);
 }
 
 /* Load More */

@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mySkills: document.getElementById("mySkills"),
     recent: document.getElementById("recent"),
     recentProjects: document.getElementById("recentProjects"),
+    viewProject: document.querySelectorAll(".view-project"),
     project_1: document.getElementById("project_1"),
     project_2: document.getElementById("project_2"),
     project_3: document.getElementById("project_3"),
@@ -25,11 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
     project_5: document.getElementById("project_5"),
     project_6: document.getElementById("project_6"),
     project_7: document.getElementById("project_7"),
+    project_8: document.getElementById("project_8"),
+    project_8_1: document.getElementById("project_8_1"),
     sectionTitle: document.getElementById("section-title"),
     contactMe: document.getElementById("contactMe"),
     aboutMe: document.getElementById("about-me"),
     downloadResume: document.getElementById("download-resume"),
     contactInfoTitle: document.getElementById("contact-info-title"),
+    loadMoreBtn: document.getElementById("loadMoreBtn"),
   };
 
   languageSelector.addEventListener("change", function () {
@@ -49,11 +53,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         for (let key in elementsToTranslate) {
-          if (elementsToTranslate[key]) {
-            elementsToTranslate[key].textContent =
-              data[selectedLang][key] || "Translation missing";
-          } else {
-            console.warn(`Element with ID "${key}" not found.`);
+          const el = elementsToTranslate[key];
+
+          if (!el) {
+            console.warn(`Element "${key}" not found`);
+            continue;
+          }
+
+          // If it's a NodeList (querySelectorAll)
+          if (el instanceof NodeList) {
+            el.forEach((node) => {
+              node.textContent =
+                data[selectedLang][key] || "Translation missing";
+            });
+          }
+          // If it's a single element
+          else {
+            el.textContent = data[selectedLang][key] || "Translation missing";
           }
         }
 

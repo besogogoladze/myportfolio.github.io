@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = document.querySelectorAll(".project-card");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
 
-  let visibleCount = 6;
+  let visibleCount = 3;
   const step = 3;
 
   function showProjects() {

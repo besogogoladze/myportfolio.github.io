@@ -11,6 +11,7 @@
     "mySkills": "My Skills",
     "recent": "Recent",
     "recentProjects": "Projects",
+    "viewProject": "View Project",
     "project_1": "Vins Georgiens. Georgian wine transporters in France ( Wordpress )",
     "project_2": "Restaurant-Thali. E-commerce restaurant website ( Wordpress )",
     "project_3": "Little Game for entertainment ( Html, JavaScript, CSS )",
@@ -18,11 +19,14 @@
     "project_5": "This application is made for IPI. This is a trip project which we had to make during the trip. ( React.js )",
     "project_6": "This application is made for mobiles. Application helps you to train yourself and be in the best physical condition. ( React.js )",
     "project_7": "This application is for rugby lovers. Inspiration for this application was given by friends, who are the members of these teams. It gives you opportunity to see the results of the matches, the schedule of the matches and the teams that are in the league. ( React.js )",
+    "project_8": "Business management service. Add, delete and edit products, converting currencies and calculate the prices.",
+    "project_8_1": "Built with Node.js(Express.js), Vite(React.js) and MongoDB.",
     "sectionTitle": "About Me",
     "contactMe": "Contact Me",
     "aboutMe": "Hello, my name is Gogoladze Besiki. I am a web developer. I have a degree in javaScript. I studied HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. I speak in 4 languages: French, English, Georgian and Russian. If you are interested in my profile",
     "downloadResume": "Download Resume",
-    "contactInfoTitle": "Contact info"
+    "contactInfoTitle": "Contact info",
+    "loadMoreBtn": "Load More"
   },
   "fr": {
     "home": "Accueil",
@@ -34,8 +38,9 @@
     "MyName": "Je m'appelle",
     "portfolio": "Portfolio",
     "mySkills": "Mes compétences",
-    "recent": "Récents",
-    "recentProjects": "Projets",
+    "recent": "Projets",
+    "recentProjects": "Récents",
+    "viewProject": "Voir Le Projet",
     "project_1": "Vins Georgiens. Transporteurs de vin géorgiens en France ( Wordpress )",
     "project_2": "Restaurant-Thali. Site Web de restaurant de commerce électronique ( Wordpress )",
     "project_3": "Petit jeu pour le divertissement ( Html, JavaScript, CSS )",
@@ -43,11 +48,14 @@
     "project_5": "Cette application est faite pour IPI. Il s'agit d'un projet de voyage que nous devions réaliser pendant le voyage. ( React.js )",
     "project_6": "Cette application est faite pour les mobiles. L'application vous aide à vous entraîner et à être en meilleure condition physique. ( React.js )",
     "project_7": "Cette application est pour les amateurs de rugby. L'inspiration pour cette application a été donnée par des amis, qui sont membres de ces équipes. Il vous donne la possibilité de voir les résultats des matchs, le calendrier des matchs et les équipes qui sont dans la ligue. ( React.js )",
+    "project_8": "Service de gestion d'entreprise. Ajoutez, supprimez et modifiez des produits, convertissez les devises et calculez les prix.",
+    "project_8_1": "Développé avec Node.js (Express.js), Vite (React.js) et MongoDB.",
     "sectionTitle": "À propos de moi",
     "contactMe": "Contactez-moi",
     "aboutMe": "Bonjour, je m'appelle Gogoladze Besiki. Je suis un développeur web. J'ai un diplôme en javaScript. J'ai étudié HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. Je parle 4 langues: français, anglais, géorgien et russe. Si vous êtes intéressé par mon profil",
     "downloadResume": "Télécharger le CV",
-    "contactInfoTitle": "Informations de contact"
+    "contactInfoTitle": "Informations de contact",
+    "loadMoreBtn": "Charger plus"
   },
   "ge": {
     "home": "Home",
@@ -61,6 +69,7 @@
     "mySkills": "ჩემი უნარების ჩვენება",
     "recent": "ბოლო",
     "recentProjects": "პროექტები",
+    "viewProject": "პროექტის ნახვა",
     "project_1": "'Vins Georgiens' ქართული ღვინის ტრანსპორტერები საფრანგეთში ( Wordpress )",
     "project_2": "'Restaurant-Thali' ე-კომერციული რესტორნის ვებ გვერდი ( Wordpress )",
     "project_3": "მარტივი, გასართობი თამაშები ( Html, JavaScript, CSS )",
@@ -68,10 +77,13 @@
     "project_5": "ეს აპლიკაცია შექმნილია IPI-სთვის. ეს არის მოგზაურობის პროექტი, რომელიც არის შექმნილი პორტოში მოგზაურობისთვის. ( React.js )",
     "project_6": "ეს აპლიკაცია შექმნილია მობილურებისთვის. აპლიკაცია გეხმარებათ ვარჯიშების დროის დათვლაში და საუკეთესო ფიზიკურ ფორმაში ყოფნაში. ( React.js )",
     "project_7": "ეს აპლიკაცია არის რაგბის მოყვარულთათვის. აპლიკაციის ინსპირაცია მეგობრებისაგან, რომლებიც არიან ამ გუნდების წევრები. ის გთავაზობთ შესაძლებლობას ნახოთ მატჩების შედეგები, მატჩების თარიღები და გუნდების პოზიციები ლიგაში. ( React.js )",
-    "sectionTitle": "ჩემ შესახებ",
+    "project_8": "ბიზნესის მართვის სერვისი. პროდუქტის დამატება, წაშლა და რედაქტირება, ვალუტის კონვერტაცია და ფასების გამოთვლა.",
+    "project_8_1": "შექმნილია Node.js(Express.js), Vite(React.js) და MongoDB-ის გამოყენებით.",
+    "sectionTitle": "ჩემს შესახებ",
     "contactMe": "დამიკავშირდით",
     "aboutMe": "გამარჯობა, მე მქვია გოგოლაძე ბესიკი. მე ვარ ვებ დეველოპერი. მაქვს ჯავასკრიპტის ხარისხი. შევისწავლე HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. ვსაუბრობ 4 ენაზე: ფრანგულ, ინგლისურ, ქართულ და რუსულ ენაზე. თუ გაინტერესებთ ჩემი პროფილი",
     "downloadResume": "გადმოწერეთ რეზიუმე",
-    "contactInfoTitle": "საკონტაქტო ინფორმაცია"
+    "contactInfoTitle": "საკონტაქტო ინფორმაცია",
+    "loadMoreBtn": "მეტის ნახვა"
   }
 }
