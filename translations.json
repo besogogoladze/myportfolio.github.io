@@ -23,7 +23,7 @@
     "project_8_1": "Built with Node.js(Express.js), Vite(React.js) and MongoDB.",
     "sectionTitle": "About Me",
     "contactMe": "Contact Me",
-    "aboutMe": "Hello, my name is Gogoladze Besiki. I am a web developer. I have a degree in javaScript. I studied HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. I speak in 4 languages: French, English, Georgian and Russian. If you are interested in my profile",
+    "aboutMe": "Hello, I'm a full-stack developer with a Bachelor's degree in Computer Science, I design and develop high-performance, modern, and scalable web and software applications. Serious, rigorous, and passionate about new technologies, I work on both front-end and back-end development, with expertise in frameworks and tools such as React, Next.js, Angular, Laravel, Symfony, Node.js, and Spring Boot. Thanks to my professional experience in France and internationally, I have participated in diverse projects ranging from web application development and project management to API optimization, responsive interface implementation, and the continuous improvement of technical solutions. I place particular importance on code quality, user experience, and collaborative work. Multilingual (Georgian, French, English, Russian), I adapt easily to multicultural and technical environments. Curious and committed, I constantly seek to deepen my skills and actively contribute to innovative projects with a real impact.",
     "downloadResume": "Download Resume",
     "contactInfoTitle": "Contact info",
     "loadMoreBtn": "Load More"
@@ -52,7 +52,7 @@
     "project_8_1": "Développé avec Node.js (Express.js), Vite (React.js) et MongoDB.",
     "sectionTitle": "À propos de moi",
     "contactMe": "Contactez-moi",
-    "aboutMe": "Bonjour, je m'appelle Gogoladze Besiki. Je suis un développeur web. J'ai un diplôme en javaScript. J'ai étudié HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. Je parle 4 langues: français, anglais, géorgien et russe. Si vous êtes intéressé par mon profil",
+    "aboutMe": "Bonjour, Je suis un développeur Full-Stack, diplômé d’un Bac+3 en informatique, je conçois et développe des applications web et logicielles performantes, modernes et évolutives. Sérieux, rigoureux et passionné par les nouvelles technologies, j’interviens aussi bien sur le frontend que le backend, avec une maîtrise de frameworks et outils tels que React, Next.js, Angular, Laravel, Symfony, Node.js et Spring Boot. Grâce à mes expériences professionnelles en France et à l’international, j’ai participé à des projets variés allant du développement d’applications web à la gestion de projets, en passant par l’optimisation d’API, la mise en place d’interfaces responsives et l’amélioration continue de solutions techniques. J’accorde une importance particulière à la qualité du code, à l’expérience utilisateur et au travail collaboratif. Polyglotte (géorgien, français, anglais, russe), je m’adapte facilement à des environnements multiculturels et techniques. Curieux et engagé, je cherche constamment à approfondir mes compétences et à contribuer activement à des projets innovants ayant un réel impact.",
     "downloadResume": "Télécharger le CV",
     "contactInfoTitle": "Informations de contact",
     "loadMoreBtn": "Charger plus"
@@ -81,7 +81,7 @@
     "project_8_1": "შექმნილია Node.js(Express.js), Vite(React.js) და MongoDB-ის გამოყენებით.",
     "sectionTitle": "ჩემს შესახებ",
     "contactMe": "დამიკავშირდით",
-    "aboutMe": "გამარჯობა, მე მქვია გოგოლაძე ბესიკი. მე ვარ ვებ დეველოპერი. მაქვს ჯავასკრიპტის ხარისხი. შევისწავლე HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, PHYTON. ვსაუბრობ 4 ენაზე: ფრანგულ, ინგლისურ, ქართულ და რუსულ ენაზე. თუ გაინტერესებთ ჩემი პროფილი",
+    "aboutMe": "გამარჯობა, მე ვარ Full-Stack დეველოპერი კომპიუტერული მეცნიერებების ბაკალავრის ხარისხით. ვქმნი და ვავითარებ მაღალი ხარისხის, თანამედროვე და მასშტაბირებად ვებ და პროგრამულ აპლიკაციებს. სერიოზული, მონდომებული და ახალი ტექნოლოგიებისადმი გატაცებული, ვმუშაობ როგორც ფრონტ-ენდ, ასევე ბექ-ენდ დეველოპმენტზე, მაქვს ექსპერტიზა ისეთ ჩარჩოებსა და ინსტრუმენტებში, როგორიცაა React, Next.js, Angular, Laravel, Symfony, Node.js და Spring Boot. საფრანგეთსა და საერთაშორისო დონეზე ჩემი პროფესიული გამოცდილების წყალობით, მონაწილეობა მივიღე მრავალფეროვან პროექტებში, დაწყებული ვებ აპლიკაციების შემუშავებიდან და პროექტის მენეჯმენტიდან, API ოპტიმიზაციამდე, რეაგირებადი ინტერფეისის დანერგვამდე და ტექნიკური გადაწყვეტილებების უწყვეტ გაუმჯობესებამდე. განსაკუთრებულ მნიშვნელობას ვანიჭებ კოდის ხარისხს, მომხმარებლის გამოცდილებას და თანამშრომლობით მუშაობას. მრავალენოვანი (ქართული, ფრანგული, ინგლისური, რუსული), ადვილად ვერგები მულტიკულტურულ და ტექნიკურ გარემოს. ცნობისმოყვარე და ერთგული, მუდმივად ვცდილობ ჩემი უნარების გაღრმავებას და აქტიურად ვმონაწილეობ ინოვაციურ პროექტებში, რომლებსაც რეალური გავლენა აქვთ.",
     "downloadResume": "გადმოწერეთ რეზიუმე",
     "contactInfoTitle": "საკონტაქტო ინფორმაცია",
     "loadMoreBtn": "მეტის ნახვა"

@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const elementsToTranslate = {
     home: document.getElementById("home"),
-    services: document.getElementById("services"),
-    projects: document.getElementById("projects"),
-    about: document.getElementById("about"),
-    contact: document.getElementById("contact"),
+    services: document.getElementById("services-link"),
+    projects: document.getElementById("projects-link"),
+    about: document.getElementById("about-link"),
+    contact: document.getElementById("contact-link"),
     Hello: document.getElementById("Hello"),
     MyName: document.getElementById("My-name"),
     portfolio: document.getElementById("portfolio"),
